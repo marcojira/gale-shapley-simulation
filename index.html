@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Introduction -->
+    <div id="introduction">
+        <p>In a bizarre turn of events, Sauron has joined forces with Voldemort. To combat this new enemy, the
+            protoganists of
+            both universes have decided to join forces. Before the great battle, it is decided that each wizard should
+            pair up
+            with one member of the Fellowship of the Ring to make sure each group has knowledge of both enemies.</p>
+        <p>Time is of the essence and unfortunately both groups cannot seem to come up with an optimal set of pairings.
+            Luckily,
+            just as hope dwindled, an ancient text is found: "College Admissions and the Stability of Marriage" by D.
+            Gale
+            and L. S.
+            Shapley... </p>
+        <button id="random-start-button" class="button button-outline">Start Simulation with <i>Random</i>
+            Preferences</button>
+    </div>
+
+    <!-- Simulation -->
+    <div id="simulation-container">
+
+        <!-- HEADERS -->
+
+        <!-- Choose proposer header -->
+        <div id="start-container" class="row">
+            <div class="column select-proposal-container">
+                <button id="hogwarts-button" class="button button-outline round-button">Hogwarts Proposes</button>
+            </div>
+            <div class="column select-proposal-container">
+                <button id="fotr-button" class="button button-outline round-button">FOTR Proposes</button>
+            </div>
+        </div>
+
+        <!-- Go next header -->
+        <div id="round-container" class="row">
+            <div class="column column-50 column-offset-25">
+                <h2 id="round-title">Round 1</h2>
+            </div>
+            <div class="column">
+                <button id="next-button" class="button button-outline round-button">Next -></button>
+            </div>
+        </div>
+
+        <!-- Done header -->
+        <div id="done-container" class="row">
+            <div class="column">
+                <h2>Done!</h2>
+            </div>
+        </div>
+
+
+        <!-- PREFERENCE TABLES -->
+
+        <div class="row">
+            <div class="column column-50">
+                <table id="hogwarts-preferences">
+                    <tbody>
+                        <thead>
+                            <th colspan="7" class="table-title">Hogwarts Preferences</th>
+                        </thead>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column column-50">
+                <table id="fotr-preferences">
+                    <tbody>
+                        <thead>
+                            <th colspan="7" class="table-title">FOTR Preferences</th>
+                        </thead>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- EXTRA INFORMATION -->
+
+        <div class="row">
+
+            <!-- Instructions -->
+            <div class="column">
+                <h3>Instructions</h3>
+                <div class="proposal-container">
+                    <ol class="indications">
+                        <li>Select which side proposes.</li>
+                        <li>Preferences are from most preferred to least.</li>
+                        <li>Click next to go through the algorithm step-by-step.</li>
+                        <li>Green is for tentatively selected.</li>
+                        <li>Red is rejected proposal.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Matches -->
+            <div class="column">
+                <h3>Matches</h3>
+                <div class="proposal-container">
+                    <ul id="matches">
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Proposals -->
+            <div class="column">
+                <h3>Proposals</h3>
+                <div class="proposal-container">
+                    <ul id="proposals">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Next simulation -->
+        <div class="row simulation-button-row">
+            <button class="button button-outline" id="simulation-button">New Simulation</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+#introduction {
+    text-align   : center;
+    margin       : 0;
+    position     : absolute;
+    top          : 50%;
+    left         : 50%;
+    margin-right : -50%;
+    transform    : translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width        : 480px;
+}
+
+#simulation-container {
+    margin : 64px;
+    display: none;
+}
+
+.select-proposal-container {
+    text-align: center;
+}
+
+#round-container {
+    display: none;
+}
+
+#done-container {
+    display   : none;
+    text-align: center;
+}
+
+#round-title {
+    text-align: center;
+}
+
+.round-button {
+    margin-top: 8px;
+}
+
+.table-title {
+    text-align: center;
+    font-size : 32px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border    : 1px solid #ddd;
+    text-align: left;
+}
+
+td:first-child {
+    font-weight: bold;
+    padding    : 15px;
+}
+
+.rejected {
+    background-color: #ffd6d6;
+}
+
+.paired {
+    background-color: #e1ffd0;
+}
+
+ul {
+    list-style-type: ' - ';
+    padding-left   : 4px;
+}
+
+.button-block {
+    display: block;
+}
+
+.button.button-outline {
+    color       : #295499;
+    border-color: #295499;
+}
+
+.indications {
+    margin-left: 8px;
+}
+
+.proposal-container {
+    border       : 1px solid #ddd;
+    height       : 240px;
+    margin-bottom: 32px;
+    padding      : 8px;
+    overflow-y   : scroll;
+}
+
+#proposals>li:first-child {
+    font-weight: bold;
+}
+
+.simulation-button-row {
+    display        : flex;
+    justify-content: center;
+}
+
+#done {
+    margin       : 0;
+    left         : 50%;
+    position     : absolute;
+    top          : 50%;
+    margin-right : -50%;
+    transform    : translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width        : 480px;
+    display      : none;
+}
